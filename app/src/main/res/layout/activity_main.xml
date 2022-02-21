@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingVertical="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <TextView android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Escoja una opción"
+        android:paddingLeft="95dp"
+        android:textColor="@color/white"
+        android:background="#BC0909"></TextView>
+
+    <ImageButton
+        android:id="@+id/plata"
+        android:layout_width="134dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        app:srcCompat="@android:drawable/btn_star_big_off" />
+
+    <TextView
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Para uno"
+        android:paddingLeft="110dp"
+        android:textColor="@color/black"
+        android:background="#2A5C564C"></TextView>
+
+    <ImageButton
+        android:layout_marginTop="25dp"
+        android:id="@+id/oro"
+        android:layout_gravity="center"
+        android:layout_width="134dp"
+        android:layout_height="64dp"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+    <TextView
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Para todos"
+        android:paddingLeft="105dp"
+        android:textColor="@color/white"
+        android:background="#CF8D0C"></TextView>
+
+
+</LinearLayout>

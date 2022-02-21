@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:theme="@style/ThemeOverlay.LADM_U1_PRACTICA1_LAYOUTS.FullscreenContainer"
+    tools:context=".FullscreenActivity"
+    android:orientation="vertical">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="Para todos"
+        android:textColor="?attr/fullscreenTextColor"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+    <TableRow
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_gravity="center"
+            android:text="Paquetes"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_gravity="center"
+            android:text="Descripción"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+    </TableRow>
+
+    <TableRow android:layout_marginTop="18dp">
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="160dp"
+            android:src="@drawable/combo5"></ImageView>
+        <TextView
+            android:layout_marginTop="35dp"
+            android:text=" 12 piezas de pollo\n 2 complementos\n 4 bísquets\n 1Refresco 2L"/>
+    </TableRow>
+    <TableRow android:layout_marginTop="18dp">
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="160dp"
+            android:src="@drawable/combo6"></ImageView>
+        <TextView
+            android:layout_marginTop="35dp"
+            android:text=" 8 piezas\n 2 comlpementos\n 3 Bísquets "/>
+    </TableRow>
+    <TableRow android:layout_marginTop="18dp">
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="160dp"
+            android:src="@drawable/combo7"></ImageView>
+        <TextView
+            android:layout_marginTop="35dp"
+            android:text=" 12 piezas\n 2 complementos\n 4 bísquets"/>
+    </TableRow>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="@style/Widget.Theme.LADM_U1_PRACTICA1_LAYOUTS.ButtonBar.Fullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/dummy_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="#NoMeRepruebesBenigno" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</TableLayout>

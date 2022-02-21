@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+    <TableRow
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_gravity="center"
+            android:text="Combo"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_gravity="center"
+            android:text="Descripción"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+    </TableRow>
+
+    <TableRow>
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="160dp"
+            android:src="@drawable/combo1"></ImageView>
+        <TextView
+            android:layout_marginTop="35dp"
+            android:text="Este combo es para \nniños por solo 89 pesos\n 1 Complemento\n 1 Bebida\n 1 PopCorn Chicken"/>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="160dp"
+            android:src="@drawable/combo2"></ImageView>
+        <TextView
+            android:layout_marginTop="35dp"
+            android:text="Este combo es para \nniños por solo 89 pesos\n 1 Pieza de pollo\n 1 Bebida\n 1 Complemento "/>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="160dp"
+            android:src="@drawable/combo3"></ImageView>
+        <TextView
+            android:layout_marginTop="35dp"
+            android:text="Este combo es para \nniños por solo 89 pesos\n 1 Hamburguesa Kruncher\n 1 Bebida\n 1 Complemento"/>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="160dp"
+            android:src="@drawable/combo4"></ImageView>
+        <TextView
+            android:layout_marginTop="35dp"
+            android:text="Este combo es para \nniños por solo 89 pesos\n 1Ke-Tira \n 1 Complemento\n 1 Bebida"/>
+    </TableRow>
+
+
+</TableLayout>
